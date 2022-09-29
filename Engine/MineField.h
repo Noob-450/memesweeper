@@ -33,7 +33,7 @@ public:
 	
 	MemeField(int nMemes);
 	void Draw(Graphics& gfx)const;
-private:
+	RectI GetRect()const;
 	Tile& TileAt(const Vei2& gridPos);
 	const Tile& TileAt(const Vei2& gridPos)const;
 private:
